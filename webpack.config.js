@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: "file-loader",
         options: {
-          name: "[name].[ext ]"
+          name: "[name].[ext]"
         }
       },
       {
@@ -94,8 +94,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/images`, to: `${PATHS.assets}images` },
-      { from: `${PATHS.src}/static`, to: `` }
+      { from: `${PATHS.src}/images`, to: `${PATHS.assets}/images` }
     ])
   ]
 };

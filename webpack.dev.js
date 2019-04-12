@@ -19,7 +19,3 @@ module.exports = merge(baseWebpackConfig, {
     })
   ]
 });
-
-// module.export = new Promise((resolve, reject) => {
-//   resolve(devWebpackConfig);
-// });

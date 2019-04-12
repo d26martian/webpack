@@ -1,0 +1,40 @@
+.card-list__btn__item {
+  &--create {
+    border: 1px solid ($color_disable);
+    &::before {
+      top: calc(26%);
+      width: 10px;
+      height: 14px;
+      background-image: url("../images/create.png");
+    }
+  }
+}
+
+.card-list__total {
+  .card-list__total__rating__text {
+    font-size: 13px;
+    color: ($color_disable);
+  }
+  .card-list__total__btn-action {
+    font-size: 13px;
+    .card-list__total__btn-action__item {
+      border: 0;
+      border-radius: 4px;
+      padding-left: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #fff;
+      background-color: ($color_rating);
+      position: relative;
+      &::before {
+        position: absolute;
+        left: 5px;
+        content: "";
+        display: block;
+        width: 12px;
+        height: 14px;
+        background-image: url("../images/bell.png");
+      }
+    }
+  }
+}
